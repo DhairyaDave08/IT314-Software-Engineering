@@ -15,7 +15,8 @@ private:
         int low = 0, high = nums.size() - 1;
         int ans = -1;
 
-        while (low < high) { 
+        while (low <= high) //Bug 1: low < high is not a valid condition 
+        { 
             int mid = low + (high - low) / 2;
 
             if (nums[mid] == target) {
