@@ -44,7 +44,7 @@ private:
 
             if (nums[mid] == target) {
                 ans = mid;
-                high = mid - 1; 
+                low=mid+1; // Bug 3: wrong statement 
             }
             else if (nums[mid] < target) {
                 low = mid + 1;
