@@ -2,10 +2,11 @@
 using namespace std;
 
 class Solution {
-public:
+public: 
     vector<int> searchRange(vector<int>& nums, int target) {
-        int first = findLast(nums, target); 
-        int last = findFirst(nums, target); 
+        //Bug 2: Wrong function call 
+        int first = findFirst(nums, target); 
+        int last = findLast(nums, target); 
 
         return {first, last};
     }
